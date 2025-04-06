@@ -8,7 +8,7 @@ async function getReview(req, res) {
         }
         
         const review = await generateContent(code);
-        console.log(review)
+        // console.log(review)
         return res.status(200).send(review);
     } catch (error) {
         res.status(500).json({ error: error.message });
